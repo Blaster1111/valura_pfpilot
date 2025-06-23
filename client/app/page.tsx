@@ -1,4 +1,4 @@
-'use client'; // needed if PortfolioDashboard uses hooks or client features
+'use client'; 
 import PortfolioDashboard from '../components/PortfolioDashboard';
 
 export default function Home() {

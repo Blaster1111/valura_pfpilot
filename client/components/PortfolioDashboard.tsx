@@ -900,7 +900,7 @@ const PortfolioDashboard: React.FC = () => {
               {data.dailyInsights.length > 0 && (
                 <div className="mt-8 max-w-2xl mx-auto text-left space-y-4">
                   <h4 className="text-lg font-semibold text-slate-900 mb-4">
-                    Today's Market Insights
+                    Today Market Insights
                   </h4>
                   {data.dailyInsights.slice(0, 3).map((insight, index) => (
                     <div
