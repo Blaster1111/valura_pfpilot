@@ -12,6 +12,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import Image from 'next/image';
 import {
   LineChart,
   Line,
@@ -42,12 +43,10 @@ import { toast } from 'sonner';
 import {
   DailyInsight,
   SecurityDetails,
-  PortfolioAssessment,
   PortfolioPerformance,
   PortfolioScore,
   SecurityHistory,
   SecurityPerformance,
-  MacroSeries,
   portfolioAPI
 } from '../app/api/portfolio-api';
 
@@ -266,7 +265,7 @@ const PortfolioDashboard: React.FC = () => {
         {/* Header */}
         <div className="flex items-center justify-between">
           <div>
-            <img
+            <Image
               src="/valura.png"
               alt="Valura Logo"
               className="h-12 w-auto filter brightness-0"
